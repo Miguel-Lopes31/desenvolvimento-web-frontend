@@ -1,0 +1,24 @@
+/* Setando estilos por TAG*/
+
+h1 {
+    color: rgb(223, 29, 29);
+
+}
+
+/* Setando estilos por ID de TAG*/
+
+#titulo_inicial {
+
+    color: rgb(245, 1, 1);
+    
+
+}
+
+/* Setando estilo por Classe de TAG*/
+
+.principal {
+
+    font-family: arial; 
+    font-size: 17px;
+
+}
