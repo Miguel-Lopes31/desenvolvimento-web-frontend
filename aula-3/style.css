@@ -1,14 +1,12 @@
 body {
-  background-color: #0d0d0d;
-  color: #e6e0d4;
-  font-family: 'Crimson Text', serif;
+  background-color: #0f0f0f
+ ;
 }
 
-h1, h2 {
-  color: #c9a66b;
-  font-family: 'Cormorant Garamond', serif;
+p {
+  color: #e0e0e0;
 }
 
-a {
-  color: #5a0f0f;
+h2 {
+  color: #00e5a0;
 }
