@@ -13,49 +13,101 @@
 </head>
 
 <body>
-    
     <div id="cabecalho">
-        <h2>Metas para 2026</h1>
-        <ol>
-            <li><B>Tirar CNH A </B></li>
-            <li><b>Aprender matemática básica</b></li>
-            <li><b>Compreender álgoritimos</b></li>
-            <li><b>Ser batizado</b></li>
-            <li><b>Ler 7 livros</b></li>
-        </ol>
+        <h1>Espaço Aleatório </h1>
+        <p>Uma exploração da minha mente</p>
     </div>
 
     <div id="conteudo">
-        <h2>Veja alguns termos que eu aprendi</h2>
-        <dl>
-            <dt> Proposição</dt>
-            <dd>É uma sentença declarativa que pode<br>assumir somente dois valores: V ou F.</dd>
-            <dt> Subjetivo</dt>
-            <dd>Algo relativo ao sujeito. Expressando<br> ideias, sentimentos, interpretações ou<br>experiencia.</dd>
-        </dl>
-        <h2>Imagens com significados</h2>
-        <img width="360" height="180" src="imagens/bobo.png" alt="bobo da corte">
-        <br>
-        <img width="360" height="180" src="imagens/12.png" alt="tudo acabou">
-        <h2>Alguns links úteis</h2>
-        <a href="https://www.linkedin.com/in/miguel-lopes-ab8a97268/">Meu linkedin</a>
-        <br>
-        <a href="https://github.com/Miguel-Lopes31">Meu GitHub</a>
-        <h2> Me fale sobre você</h2>
-        <form name="dados_pess" action="login.html" method="POST">
-            Nome: <input type="text" name="Nome" value=""><br>
-            Idade: <input type="number" name="Idade" value=""></BR>
-            Sexo: <br>
-            <input type="radio" name"Sexo" value="male">Masculino<br>
-            <input type="radio" name"Sexo" value="female">Feminino<br>
-            Coisas Preferidas: <br>
-            <input type="checkbox" name="preferencias" value="xadrez">Jogar Xadrez<br>
-            <input type="checkbox" name="preferencias" value="matematica">Matemática<br>
-            <input type="checkbox" name="preferencias" value="computadores">Computadores<br>
-            Observações: <br>
-            <textarea name="observacoes" rows="4" cols="50"></textarea><br>
-            <input type="submit" value="Enviar">
-        </form>
+        
+        <section class="secao">
+            <h2>Metas para 2026</h2>
+            <ol>
+                <li><strong>Tirar CNH A</strong></li>
+                <li><strong>Aprender matemática básica</strong></li>
+                <li><strong>Compreender algoritmos</strong></li>
+                <li><strong>Ser batizado</strong></li>
+                <li><strong>Ler 7 livros</strong></li>
+            </ol>
+        </section>
+
+        <section class="secao">
+            <h2>Termos que Aprendi</h2>
+            <dl>
+                <dt>Proposição</dt>
+                <dd>É uma sentença declarativa que pode assumir somente dois valores: V ou F.</dd>
+                <dt>Subjetivo</dt>
+                <dd>Algo relativo ao sujeito. Expressando ideias, sentimentos, interpretações ou experiência.</dd>
+            </dl>
+        </section>
+
+        <section class="secao">
+            <h2>Onças Pintadas - Predadores das Sombras</h2>
+            <p class="descricao">Conheça um dos predadores mais fascinantes da natureza (meu favorito).</p>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/rLoDs3GB2cw" 
+                    title="Vídeo sobre Onças Pintadas" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="secao">
+            <h2>Imagens com Significados</h2>
+            <div class="galeria">
+                <img width="360" height="180" src="imagens/bobo.png" alt="bobo da corte">
+                <img width="360" height="180" src="imagens/12.png" alt="tudo acabou">
+            </div>
+        </section>
+
+        <section class="secao">
+            <h2>Alguns Links Úteis</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/miguel-lopes-ab8a97268/" target="_blank">Meu LinkedIn</a>
+                <a href="https://github.com/Miguel-Lopes31" target="_blank">Meu GitHub</a>
+            </div>
+        </section>
+
+        <section class="secao formulario-secao">
+            <h2>Me Fale Sobre Você</h2>
+            <form name="dados_pess" action="login.html" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="Nome" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="Idade" value="">
+                </div>
+
+                <div class="form-group">
+                    <label>Sexo:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="Sexo" value="male"> Masculino</label>
+                        <label><input type="radio" name="Sexo" value="female"> Feminino</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Coisas Preferidas:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="preferencias" value="xadrez"> Jogar Xadrez</label>
+                        <label><input type="checkbox" name="preferencias" value="matematica"> Matemática</label>
+                        <label><input type="checkbox" name="preferencias" value="computadores"> Computadores</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+
     </div>
 
     
